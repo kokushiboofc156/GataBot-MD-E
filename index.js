@@ -33,6 +33,15 @@ gradient: ['red', 'magenta']})
 
 var isRunning = false
 
+process.on('uncaughtException', (err) => {
+if (err.code === 'ENOSPC') {
+console.error('Se ha detectado ENOSPC (sin espacio o límite de watchers alcanzado), reiniciando....')
+} else {
+console.error('Error no capturado:', err)
+}
+process.exit(1)
+})
+
 async function start(file) {
 if (isRunning) return
 isRunning = true
@@ -91,9 +100,8 @@ console.log(chalk.yellow(`╭${lineM}
 ┊${chalk.blueBright('┊')}${chalk.cyan(`💜 Descripción: ${packageJsonObj.description}`)}
 ┊${chalk.blueBright('┊')}${chalk.cyan(`😺 Project Author: ${packageJsonObj.author.name} (@gata_dios)`)}
 ┊${chalk.blueBright('┊')}${chalk.blueBright('┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')} 
-┊${chalk.blueBright('┊')}${chalk.yellow(`💜 Colaboradores:`)}
+┊${chalk.blueBright('┊')}${chalk.yellow(`💜 Colaborador:`)}
 ┊${chalk.blueBright('┊')}${chalk.yellow(`• elrebelde21 (Mario ofc)`)}
-┊${chalk.blueBright('┊')}${chalk.yellow(`• KatashiFukushima (Katashi)`)}
 ┊${chalk.blueBright('╰┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')} 
 ┊${chalk.blueBright('╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')}
 ┊${chalk.blueBright('┊')}${chalk.cyan(`⏰ Hora Actual :`)}

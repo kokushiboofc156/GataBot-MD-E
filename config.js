@@ -13,16 +13,29 @@ import { en, es, id, ar, pt } from "./lib/idiomas/total-idiomas.js"
 // [ES] > Agrega el número que será Bot y los que serán propietarios.
 // [EN] > Add the number that will be Bot and those that will be owners.
 global.owner = [
-["573147616444", '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 💖🐈', true], //𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿
+["5214774444444", '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 💖🐈', true], //𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿
+["573019448245"],
+["5257627213899"],
+["149749000843505"],
 ["5492266613038"], 
 ["5573031859"],
+["5492916450307"],
 ["593968585383"],
 ["595976126756"],
+["584125778026"],
 ["593968263524"],
-["5215539356057"]]
+["5215539356057"],
+["573012482597"],
+["5219999699999"],
+['5216646666666'],
+['5214531287294'],
+["51968374620"]]
 
 global.mods = []
 global.prems = []
+
+//cambia a false Desactivar en "auto-reconexion" de sub-bots
+global.gataJadibts = true
 
 // Cambiar a false para usar el Bot desde el mismo numero del Bot.
 global.isBaileysFail = false
@@ -62,49 +75,22 @@ global.version_language = '1.0 (MID-GB)'
 
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 // ❰❰ API KEYS ❱❱
-global.Key360 = ["Gata_Dios"] // key Ephoto360
-global.openai_key = 'sk-0' // Api New: https://platform.openai.com/account/api-keys 
-global.openai_org_id = 'org-3' // Api New: https://platform.openai.com/account/org-settings */
-global.keysZens = ["LuOlangNgentot", "c2459db922", "37CC845916", "6fb0eff124", "hdiiofficial", "fiktod", "BF39D349845E", "675e34de8a", "0b917b905e6f"]
-global.keysxxx = keysZens[Math.floor(keysZens.length * Math.random())]
-global.keysxteammm = ["29d4b59a4aa687ca", "5LTV57azwaid7dXfz5fzJu", "cb15ed422c71a2fb", "5bd33b276d41d6b4", "HIRO", "kurrxd09", "ebb6251cc00f9c63"]
-global.keysxteam = keysxteammm[Math.floor(keysxteammm.length * Math.random())]
-global.keysneoxrrr = ["5VC9rvNx", "cfALv5"]
-global.keysneoxr = keysneoxrrr[Math.floor(keysneoxrrr.length * Math.random())]
-global.lolkeysapi = "GataDiosV3"
-global.itsrose = ["4b146102c4d500809da9d1ff"]
 global.baileys = "@whiskeysockets/baileys"
-global.apis = 'https://deliriussapi-oficial.vercel.app'
+global.apis = 'https://delirius-apiofc.vercel.app'
 
 global.APIs = { 
-xteam: 'https://api.xteam.xyz',
-dzx: 'https://api.dhamzxploit.my.id',
-lol: 'https://api.lolhuman.xyz',
-violetics: 'https://violetics.pw',
-neoxr: 'https://api.neoxr.my.id',
-zenzapis: 'https://api.zahwazein.xyz',
-akuari: 'https://api.akuari.my.id',
-akuari2: 'https://apimu.my.id',	
-fgmods: 'https://api.fgmods.xyz', 
-botcahx: 'https://api.botcahx.biz.id',
-ibeng: 'https://api.ibeng.tech/docs',	
-rose: 'https://api.itsrose.site',
-popcat : 'https://api.popcat.xyz',
-xcoders : 'https://api-xcoders.site'
-},
-   
-global.APIKeys = { 
-'https://api.xteam.xyz': `${keysxteam}`,
-'https://api.lolhuman.xyz': `${lolkeysapi}`,
-'https://api.neoxr.my.id': `${keysneoxr}`,	
-'https://violetics.pw': 'beta',
-'https://api.zahwazein.xyz': `${keysxxx}`,
-'https://api.fgmods.xyz': 'DRLg5kY7', 
-'https://api-fgmods.ddns.net': 'fg-dylux',
-'https://api.botcahx.biz.id': 'Admin',
-'https://api.ibeng.tech/docs': 'tamvan',
-'https://api.itsrose.site': 'Rs-Zeltoria',
-'https://api-xcoders.site': 'Frieren'
+lolhuman: { url: 'https://api.lolhuman.xyz/api', key: 'GataDiosV3' },
+skizo: { url: 'https://skizo.tech/api', key: 'GataDios' },
+alyachan: { url: 'https://api.alyachan.dev/api', key: null }, 
+exonity: { url: 'https://exonity.tech/api', key: 'GataDios' },
+ryzendesu: { url: 'https://api.ryzendesu.vip/api', key: null },
+neoxr: { url: 'https://api.neoxr.eu/api', key: 'GataDios' },
+davidcyriltech: { url: 'https://api.davidcyriltech.my.id', key: null },
+dorratz: { url: 'https://api.dorratz.com', key: null },
+siputzx: { url: 'https://api.siputzx.my.id/api', key: null },
+vreden: { url: 'https://api.vreden.web.id/api', key: null },
+fgmods: { url: 'https://api.fgmods.xyz/api', key: 'elrebelde21' },
+popcat: { url: 'https://api.popcat.xyz', key: null }
 }
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 
@@ -122,7 +108,7 @@ global.moment = moment
 // [EN] > Adding yourself, collaborators or helpers will appear in the contact list command.
 global.official = [ // Agregate si eres Owner
 ["593968263524", 'Gata Dios 💻', 1], 
-["5492266466080", '𝗗𝗲𝘀𝗮𝗿𝗿𝗼𝗹𝗹𝗮𝗱𝗼𝗿 𝗢𝗳𝗶𝗰𝗶𝗮𝗹 💻', 1],  
+["573147616444", '𝗗𝗲𝘀𝗮𝗿𝗿𝗼𝗹𝗹𝗮𝗱𝗼𝗿 𝗢𝗳𝗶𝗰𝗶𝗮𝗹 💻', 1],  
 ["5521989092076", '𝗗𝗲𝘀𝗮𝗿𝗿𝗼𝗹𝗹𝗮𝗱𝗼𝗿𝗮 𝗢𝗳𝗶𝗰𝗶𝗮𝗹 💻', 1]]
 
 global.mail = '' // Add email
@@ -139,10 +125,9 @@ global.author = ` ╭ 𝗚𝗮𝘁𝗮 𝗗𝗶𝗼𝘀 ✓\n ┃\n ┃ » 𝙶�
 // MANTENGA ESTO SIN MODIFICAR, NOS ESFORZAMOS A DIARIO POR OFRECERLES UN BOT PARA LA COMUNIDAD, SEA AGRADECIDO 😉
 // [EN] > BOT VERSION INFORMATION, PLEASE KEEP THIS UNCHANGED, WE STRIVE DAILY TO PROVIDE YOU WITH A BOT FOR THE COMMUNITY, BE GRATEFUL
 global.vs = "1.7.0"
-global.vsJB = "3.0 (Beta)"
+global.vsJB = "5.0 (Beta)"
 global.gt = "𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿"
-
-fetchDataAndProcess().catch(error => console.error('Ocurrió un error:', error))
+global.imagen = fs.readFileSync('./Menu2.jpg')
 
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 
@@ -426,6 +411,31 @@ else return emotttt[results[0][0]];
 }}
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 
+// IDs de canales
+global.ch = {
+ch1: '120363203805910750@newsletter',
+ch2: '120363317213148300@newsletter',
+ch3: '120363301598733462@newsletter',
+ch4: '120363418207293803@newsletter',
+ch5: '120363343811229130@newsletter',
+ch6: '120363307551724976@newsletter',
+ch7: '120363370415738881@newsletter',
+ch8: '120363374372683775@newsletter',
+ch9: '120363190430436554@newsletter',
+ch10: '120363323286489957@newsletter',
+ch11: '120363263466636910@newsletter',
+ch12: '120363323882134704@newsletter',
+ch13: '120363347440552857@newsletter',
+ch14: '120363403479934106@newsletter',
+ch15: '120363419262674739@newsletter',
+ch16: '120363167110224268@newsletter',
+ch17: '120363302472386010@newsletter',
+ch18: '120363305941657414@newsletter',
+ch19: '120363336642332098@newsletter',
+ch20: '120363385983031660@newsletter',
+}
+// • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
+
 let file = fileURLToPath(import.meta.url);
 watchFile(file, () => {
 unwatchFile(file);
@@ -433,43 +443,24 @@ console.log(chalk.redBright("Update 'config.js'"));
 import(`${file}?update=${Date.now()}`);
 })
 
-async function fetchDataAndProcess() {
-const response = await fetch('https://raw.githubusercontent.com/GataNina-Li/GataBot-MD/master/official_accounts.json')
-const data = await response.json() 
-let { accounts, channels, groups, collaboration, sponsors, others } = data.info
+global.yt = 'https://youtube.com/@gatadios'
+global.ig = 'https://www.instagram.com/gata_dios'
+global.md = 'https://github.com/GataNina-Li/GataBot-MD'
+global.fb = 'https://www.facebook.com/groups/872989990425789'
+global.tk = 'https://www.tiktok.com/@gata_dios'
+global.ths = 'https://www.threads.net/@gata_dios'
+global.paypal = 'https://paypal.me/OficialGD'
+global.asistencia = 'https://wa.me/message/MEKOUFBEOG5ED1'
+global.all = 'https://www.atom.bio/GataBot'
+global.canal1 = 'https://whatsapp.com/channel/0029Va4QjH7DeON0ePwzjS1A'
+global.canal2 = 'https://whatsapp.com/channel/0029Va6yY0iLY6d6XDmqA03g'
+global.canal3 = 'https://whatsapp.com/channel/0029VaKn22pDJ6GwY61Ftn15'
+global.canal4 = 'https://t.me/globalgb'
 
-global.yt = accounts.youTube
-global.yt2 = others.yt_vid
-global.ig = accounts.instagram
-global.md = accounts.gatabot_md
-global.fb = accounts.facebook
-global.tk = accounts.tiktok
-global.ths = accounts.threads
-global.paypal = accounts.paypal
-global.asistencia = others.assistance_num
-global.bot = 'wa.me/50238024328'
-global.cuentas = accounts.all
-
-global.canal1 = channels.channel1
-global.canal2 = channels.channel2
-global.canal3 = channels.channel3
-global.canal4 = channels.channel4
-
-global.soporteGB = others.group_support
-global.grupo1 = groups.group1
-global.grupo2 = groups.group2
-global.grupo3 = groups.group3
-global.grupo4 = groups.group4
-global.grupo5 = groups.group5
-global.grupo6 = groups.group6
-
-global.grupo_collab1 = collaboration.group1
-global.grupo_collab2 = collaboration.group2
-global.grupo_collab3 = collaboration.group3
-global.grupo_collab4 = collaboration.group4
-
-global.patrocinador1 = sponsors.boxmine
-global.patrocinador2 = sponsors.cafirexos
-global.patrocinador3 = sponsors.vortexus
-global.patrocinador4 = sponsors.asif
-}
+global.soporteGB = "https://chat.whatsapp.com/GQ82mPnSYnm0XL2hLPk7FV"
+global.grupo1 = "https://chat.whatsapp.com/JRG6rVJJV40IxlI1wjQ0E9"
+global.grupo2 = "https://chat.whatsapp.com/B5s3ohjEGofH5YDD05jAV5"
+global.grupo_collab1 = "https://chat.whatsapp.com/IO5k0UOF7hOJHE1eH3Fcxh"
+global.grupo_collab2 = "https://chat.whatsapp.com/GFsgXW2VD4I4FEOSlEg9wp"
+global.grupo_collab3 = "https://chat.whatsapp.com/H1TEBeMtFVv3RcayD1WfGU"
+global.grupo_collab4 = "https://chat.whatsapp.com/LuD3YzdOjH16LUwPPCVmL6"

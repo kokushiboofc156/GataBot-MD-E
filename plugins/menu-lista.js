@@ -1,5 +1,6 @@
 // Botones interactivos adptados y funcionando por Gata Dios (GataNina-Li)
 
+//QUEDO OBSOLETO DE NUEVO CULPA DE WHATSAPP BUG :v
 import { getDevice } from '@whiskeysockets/baileys'
 import fs from 'fs'
 import moment from 'moment-timezone'
@@ -87,9 +88,8 @@ months: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto
 lugarFecha.locale('es', formatoFecha)
 const horarioFecha = lugarFecha.format('dddd, DD [de] MMMM [del] YYYY || HH:mm A').replace(/^\w/, (c) => c.toUpperCase())
 
-if (!/web|desktop|unknown/gi.test(dispositivo)) {  
-let menu = `
-⎔ \`\`\`${horarioFecha}\`\`\`
+if (!m.isWABusiness && !/web|desktop|unknown/gi.test(dispositivo)) {  
+let menu = `⎔ \`\`\`${horarioFecha}\`\`\`
 ⎔ *${lenguajeGB['smsTotalUsers']()}* ➺ _${Object.keys(global.db.data.users).length}_ 
 ⎔ *Registrados »* ${rtotalreg}/${totalreg}    
 ⎔ *${lenguajeGB['smsUptime']()}* ➺ _${uptime}_ 
@@ -240,8 +240,8 @@ await m.reply(lenguajeGB['smsMalError3']() + '\n*' + lenguajeGB.smsMensError1() 
 console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
 console.log(e)}}
 
-handler.command = /^(menu|menú|memu|memú|help\?)$/i
-handler.register = true
+handler.command = /^(menu|menú|memu|memú|help|2help|commands|commandos)$/i
+//handler.register = true
 export default handler
 
 const more = String.fromCharCode(8206)
@@ -251,6 +251,7 @@ let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
 let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
 let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
 return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')}  
+
 
 /* 
 import fs from 'fs'
